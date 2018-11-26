@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Weather Station</string>
+    <string name="title_list">List</string>
+    <string name="title_data">Data</string>
+    <string name="title_search">Search</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

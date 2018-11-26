@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/data_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/stationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Имя устройства"
+            android:textColor="@color/colorDark"
+            android:textSize="26sp"
+            android:typeface="monospace"
+            app:fontFamily="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/temperatureString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:text="Температура воздуха:"
+            android:textColor="@color/colorDark"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif"
+            app:layout_constraintEnd_toEndOf="@+id/humidityString"
+            app:layout_constraintTop_toBottomOf="@+id/stationName" />
+
+        <TextView
+            android:id="@+id/humidityString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Влажность:"
+            android:textColor="@color/colorDark"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif"
+            app:layout_constraintEnd_toEndOf="@+id/pressureString"
+            app:layout_constraintTop_toBottomOf="@+id/temperatureString" />
+
+        <TextView
+            android:id="@+id/pressureString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Атмосферное давление:"
+            android:textColor="@color/colorDark"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif"
+            app:layout_constraintEnd_toEndOf="@+id/airSpeedString"
+            app:layout_constraintTop_toBottomOf="@+id/humidityString" />
+
+        <TextView
+            android:id="@+id/airSpeedString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Скорость движения воздуха:"
+            android:textColor="@color/colorDark"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pressureString" />
+
+        <TextView
+            android:id="@+id/temperatureValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="None"
+            android:textColor="@color/colorDark"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/temperatureString"
+            app:layout_constraintTop_toTopOf="@+id/temperatureString" />
+
+        <TextView
+            android:id="@+id/humidityValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="None"
+            android:textColor="@color/colorDark"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/humidityString"
+            app:layout_constraintTop_toTopOf="@+id/humidityString" />
+
+        <TextView
+            android:id="@+id/pressureValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="None"
+            android:textColor="@color/colorDark"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pressureString"
+            app:layout_constraintTop_toTopOf="@+id/pressureString" />
+
+        <TextView
+            android:id="@+id/airSpeedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="None"
+            android:textColor="@color/colorDark"
+            android:textSize="20sp"
+            android:typeface="sans"
+            app:fontFamily="sans-serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/airSpeedString"
+            app:layout_constraintTop_toTopOf="@+id/airSpeedString" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
